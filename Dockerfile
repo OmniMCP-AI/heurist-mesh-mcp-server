@@ -23,4 +23,4 @@ ENV PORT=8000
 ENV TRANSPORT=sse
 
 # Use ENTRYPOINT with sh -c to allow variable expansion
-ENTRYPOINT ["sh", "-c", "uv run mesh-tool-server --transport ${TRANSPORT} --port ${PORT}"]
+ENTRYPOINT ["sh", "-c", "uv run mesh-tool-server --transport stdio --port ${PORT}"]
